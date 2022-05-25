@@ -25,7 +25,7 @@ def serializeData():
     serialized = json.dumps(encrypted_data)
     return serialized
 
-if __name__=='__main__':
+def writeToAnswer():
     datafile = serializeData()
     with open('answer.json', 'w') as file:
         json.dump(datafile, file)
